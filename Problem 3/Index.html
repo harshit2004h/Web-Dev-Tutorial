@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Card</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .outer {
+        border: 2px solid black;
+        height: 670px;
+        width: 450px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .Image {
+        background-image: url(https://w0.peakpx.com/wallpaper/239/676/HD-wallpaper-man-standing-in-front-view-of-lake-surrounded-with-mountains.jpg);
+        background-size: cover;
+        height: 50%;
+        width: 93%;
+        border-radius: 20px;
+        margin: 20px 0px 20px;
+      }
+      div h1 {
+        margin-top: 11px;
+        margin-bottom: 2px;
+        text-decoration: underline;
+      }
+      div p {
+        margin: 10px;
+        font-size: 19px;
+        text-align: justify;
+        color: #727070;
+      }
+      .Tags span {
+        text-decoration: none;
+        border: 2px solid #a9a8a8;
+        color: #727070;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 30px;
+        font-size: 18px;
+      }
+      .Tags {
+        width: 250px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .ReadMore button {
+        background-color: rgba(1, 208, 255, 0.199);
+        border-radius: 40px;
+        border: none;
+        height: 40px;
+        width: 130px;
+        color: #00a2ff;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      button:hover{
+        background-color: rgba(2, 166, 255, 0.199);
+        color: #00a2ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="Image"></div>
+      <div class="Tags">
+        <span>Nature</span>
+        <span>Lake</span>
+      </div>
+      <div class="Content">
+        <h1>Nature's Serene Splendor</h1>
+        <p>
+          Nature's serene splendor is revealed in the tranquil landscapes,
+          vibrant flora, and majestic wildlife. Its beauty captivates the soul,
+          offering a peaceful escape from the chaos of daily life, inspiring awe
+          and wonder. The harmony and balance found in nature's splendor evoke a
+          profound appreciation.
+        </p>
+      </div>
+      <div class="ReadMore">
+        <button>ReadMore</button>
+      </div>
+    </div>
+  </body>
+</html>

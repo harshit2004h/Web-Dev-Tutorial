@@ -1,0 +1,12 @@
+ul {
+  display: flex;
+  gap: 34px;
+  padding: 15px;
+  background-color: cadetblue;
+  border-bottom: 5px solid black;
+}
+li {
+  font-size: 20px;
+  list-style: none;
+  font-weight: bold;
+}

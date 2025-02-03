@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Post Request</title>
+    <style>
+      .container {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+    <script>
+        async function testPost(){
+            let a= await fetch("/",{method:"PUT"})
+            let b= await a.text();
+            console.log("Hello "+b);
+        }
+        testPost();
+    </script>
+  </body>
+</html>

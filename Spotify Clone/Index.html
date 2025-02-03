@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="shortcut icon" href="Assets/Icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="Left_Container">
+        <div class="LeftUp">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <img class="LogoImg" src="Assets/Spotify.svg" alt="" />
+            <img class="Cross" src="Assets/Cross.svg" alt="" />
+          </div>
+          <div class="Home">
+            <img src="Assets/Home.svg" alt="" />
+            <p class="HomeText">Home</p>
+          </div>
+          <div class="Search">
+            <img src="Assets/Search_Icon.svg" alt="" />
+            <p class="SearchText">Search</p>
+          </div>
+        </div>
+        <div class="LeftDown">
+          <div class="YourLibrary">
+            <div class="LibLeft">
+              <img src="Assets/Your_Library.svg" alt="" />
+              <p>Your Library</p>
+            </div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="SongList">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div class="Right_Container">
+        <div class="RightUp">
+          <div class="Arrow">
+            <img src="Assets/Hamburger.svg" class="HamBurger" />
+            <div class="circle"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="circle"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="SignLogin">
+            <button class="Sign">Sign up</button>
+            <button class="Login">Log in</button>
+          </div>
+        </div>
+        <div class="RightDown">
+          <h1 class="PopularHeading">Popular artists</h1>
+          <div class="PopularArtists"></div>
+          <h1 class="PopularHeading">Spotify Playlists</h1>
+          <div class="SpotifyPlaylist"></div>
+        </div>
+        <div class="Play">
+          <div class="PlayUp">
+            <div class="LeftInfo">
+              <img class="BarGif" src="Assets/Sound Bar.gif" alt="" />
+              <div class="SongInfo"></div>
+            </div>
+            <div class="PlayButtons">
+              <img src="Assets/Shuffle.svg" id="shuffle" alt="" />
+              <img src="Assets/Back.svg" id="Back" alt="" />
+              <img src="Assets/Play.svg" id="PlayBtn" alt="" />
+              <img src="Assets/Next.svg" id="Next" alt="" />
+              <img src="Assets/Repeat.svg" id="Repeat" alt="" />
+            </div>
+            <div class="Volume">
+              <img src="Assets/Volume.svg" id="VolImg" style="height: 18px" />
+              <div class="VolumeSeek">
+                <input type="range" name="VolRange" class="VolSeek" />
+              </div>
+            </div>
+          </div>
+          <div class="PlayDown">
+            <div class="CurrentTime">00:00</div>
+            <div class="SeekBar">
+              <div class="SeekCircle"></div>
+            </div>
+            <div class="TotalTime">00:00</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="RightFoot">
+          <p>Preview of Spotify</p>
+          <p>
+            Sign up to get unlimited songs and podcasts with occasional ads. No
+            credit card needed.
+          </p>
+        </div>
+        <button>Sign up free</button>
+      </div>
+    </footer>
+    <script src="Script/Script.js"></script>
+  </body>
+</html>

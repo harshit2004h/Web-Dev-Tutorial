@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 30</title>
+    <style>
+      :root {
+        --color: rgb(248, 0, 223);
+        --seccolor: rgb(241, 167, 234);
+        --defpad: 10px /*Default Padding*/;
+        --defopac: 0.7;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        /* padding: 20px; */
+        padding: var(--defpad);
+        opacity: var(--defopac);
+      }
+      ul li:first-child {
+        --color: rgb(255, 123, 0);
+        background-color: var(--color);
+      }
+      ul li:nth-child(3) {
+        background-color: var(
+          --NOTcolor,
+          rgb(229, 255, 0)
+        ); /*Here the color written after comma is FALLBACK color*/
+      }
+      div:first-child {
+        /* background-color: rgb(0, 255, 170); */
+        background-color: var(--color);
+      }
+      .container {
+        /* background-color: rgb(177, 237, 216); */
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid,
+      incidunt impedit odio nesciunt similique, repudiandae minus aut deleniti,
+      vitae nobis. Porro sunt, dolorum dolor, perspiciatis dicta quia corporis,
+      fuga reiciendis ducimus optio rerum totam tenetur! Id reiciendis quae
+      vitae voluptatem, quibusdam a aperiam voluptatibus. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Blanditiis numquam suscipit recusandae
+      sed. Ratione nemo accusantium natus modi aliquam, vero aut deleniti illum
+      molestiae minus magnam consequuntur amet error quos? Debitis eos quaerat
+      quibusdam. Consequatur nostrum, pariatur aspernatur id ullam, earum soluta
+      numquam architecto temporibus culpa hic adipisci explicabo veritatis ab
+      unde placeat voluptas perspiciatis eligendi at cupiditate facilis. At?
+      Temporibus, reprehenderit odio optio rem nobis officia veniam nulla
+      veritatis eveniet, numquam ipsa quas eos vero illum odit atque asperiores
+      ipsum cupiditate provident deleniti ullam quasi porro animi! Debitis,
+      officia! Autem, ea? Neque minima numquam commodi aliquam quos in ullam
+      optio laudantium ipsa vero eaque nam tenetur necessitatibus autem placeat
+      a laboriosam voluptates vitae qui praesentium, modi quidem! Quasi, totam!
+      Porro cupiditate dolorum provident et, ducimus nemo, temporibus debitis
+      laboriosam maiores repellendus aut quod numquam qui doloribus hic, facere
+      officia illo vel? Vitae nemo ex blanditiis quod aperiam pariatur porro?
+      Ipsa, aperiam explicabo, amet corporis maiores libero autem, provident at
+      minima impedit aliquam repudiandae quisquam vel quibusdam ullam rem error
+      facere! Saepe aliquam animi deleniti autem dolore inventore ad reiciendis?
+    </div>
+    <div class="images"></div>
+  </body>
+</html>

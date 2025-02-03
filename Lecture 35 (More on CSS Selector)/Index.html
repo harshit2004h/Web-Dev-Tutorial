@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selector</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .boxes *{
+            font-weight: bold;
+        }
+      .boxes::before {
+        content: "This is a before content";
+        color: brown;
+      }
+      .boxes::after{
+        content: "This is an after content";
+        color: blueviolet
+      }
+      ::selection{
+        color: aqua;
+        background-color: black;
+      }
+      .box::first-letter{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">This is a first box</div>
+      <div class="box">This is a second box</div>
+      <div class="box">This is a third box</div>
+    </div>
+  </body>
+</html>

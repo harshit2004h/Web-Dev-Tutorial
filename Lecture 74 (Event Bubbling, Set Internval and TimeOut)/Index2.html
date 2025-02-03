@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .child {
+        border: 3px solid black;
+        height: 100px;
+        width: 600px;
+        background-color: chartreuse;
+        font-size: xx-large;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .childContainer {
+        border: 3px solid black;
+        height: 200px;
+        width: 700px;
+        background-color: darkmagenta;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        border: 3px solid black;
+        height: 300px;
+        width: 800px;
+        background-color: aqua;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="childContainer">
+        <div class="child">I am a Child</div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".child").addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("Child Clicked");
+      });
+      document
+        .querySelector(".childContainer")
+        .addEventListener("click", (e) => {
+          console.log("Child Container Clicked");
+        });
+      document.querySelector(".container").addEventListener("click", (e) => {
+        console.log("container Clicked");
+      });
+    </script>
+  </body>
+</html>

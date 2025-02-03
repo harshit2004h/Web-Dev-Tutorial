@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+}
+main{
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content:space-between ;
+}

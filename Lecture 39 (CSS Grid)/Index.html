@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: [Pehla] 120px [Doosra] 100px [Teesra];
+        grid-template-rows: [First] 100px [Second] 100px [Third] 100px [Fourth];  /* Yeh Lines ke names hain cells ke nahi */
+      }                                                                           /* Lines = Cells + 1 */
+      .item {
+        border: 2px solid red;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+      }
+      .item-4 {
+        grid-row: 1/2;      /*Row should start from 1 and should extend till 2*/
+        grid-column: 1/2;   /*Column should start from 1 and extend till 2*/
+      }
+      .item-1 {
+        grid-row: 1/2;        /*We also define it for ITEM-1 beacuse it is pushed when item-1 is placed   */
+        grid-column: 1/2;
+      }
+      .item-2 {
+        grid-row: 1/3;
+        grid-column-start: Pehla;       /* grid-column: 1(START) / 3(END) */
+        grid-column-end: Teesra;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item-2" style="border: 2px solid red; text-align: center">
+        2
+      </div>
+      <div class="item">3</div>
+      <div class="item item-4">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
